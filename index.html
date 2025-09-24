@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          id="profile_picture"
+          src="images/profile.jpg"
+          alt="Portrait of Mahmoud Zein"
+        />
+        <h1>Mahmoud Zein</h1>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#skills" aria-label="Go to skills section">Skills</a>
+          </li>
+          <li>
+            <a href="#projects" aria-label="Go to projects section">Projects</a>
+          </li>
+          <li>
+            <a href="#contact" aria-label="Go to contact section">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="profile">
+      <h2>About Me</h2>
+      <p>
+        Hi, I’m <strong>Mahmoud Zein</strong>, a Media Informatics student with
+        a passion for software development, data analysis, and web technologies.
+        I enjoy building projects that combine creativity and functionality,
+        from web applications to data-driven tools.
+      </p>
+      <ul>
+        <li><strong>Location:</strong> Berlin, Germany</li>
+        <li><strong>Education:</strong> B.Sc. Media Informatics</li>
+        <li>
+          <strong>Interests:</strong> Coding, design, data analysis
+        </li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Python</li>
+        <li>HTML & CSS</li>
+        <li>Software Testing (Basics)</li>
+        <li>Data Analysis (Pandas, NumPy)</li>
+      </ul>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <a
+          class="project-link"
+          href="https://github.com/bhtgitmoe/newsaggregator"
+          aria-label="Open Webscraper project on GitHub"
+        >
+          <div class="project">
+            <img
+              src="images/figure1.png"
+              alt="Screenshot of the Webscraper project"
+              class="project-screenshot"
+            />
+            <h3>Webscraper</h3>
+            <div class="project-info">
+              <p>A python Webscraper. Collects and analyses trending news</p>
+              <ul>
+                <li><strong>Language: </strong>Python</li>
+                <li><strong>Year: </strong>2025</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a
+          class="project-link"
+          href="https://github.com/bhtgitmoe/webfood"
+          aria-label="Open Webfood project on GitHub"
+        >
+          <div class="project">
+            <img
+              src="images/webfood.png"
+              alt="Screenshot of the Webfood project"
+              class="project-screenshot"
+            />
+            <h3>Web-Food</h3>
+            <div class="project-info">
+              <p>A simple webpage for food ordering</p>
+              <ul>
+                <li><strong>Language: </strong>HTML, CSS</li>
+                <li><strong>Year: </strong>2023</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact me</h2>
+      <form action="#" method="post">
+        <div>
+          <label for="name">Name:*</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="email">Email:*</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="message">Message:*</label>
+          <textarea
+            name="message"
+            id="message"
+            rows="4"
+            cols="50"
+            placeholder="Your message"
+            required
+          ></textarea>
+        </div>
+        <button type="submit">Send</button>
+        <!--<input type="submit" value="Submit" />-->
+      </form>
+      <p>
+        Email:
+        <a
+          href="mailto:s77362@bht-berlin.de"
+          aria-label="Send an email to s77362@bht-berlin.de"
+          >s77362@bht-berlin.de</a
+        >
+      </p>
+    </section>
+    <footer>
+      <p>© 2025 Mahmoud Zein. All rights reserved</p>
+    </footer>
+  </body>
+</html>

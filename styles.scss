@@ -1,0 +1,109 @@
+$color_1: #333;
+$color_2: white;
+$color_3: #444;
+$color_4: #666;
+$color_5: #f0c040;
+$font-family_1: Arial, Helvetica, sans-serif;
+$background-color_1: #e5e5e5;
+$background-color_2: #1e1e1e;
+$background-color_3: #fff;
+$background-color_4: #eee;
+$background-color_5: #f0f0f0;
+
+/* Reset default margins and fonts */
+/* Header styles */
+/* Section styles */
+/* Project boxes */
+/* Footer */
+/* Hover ffect for navigation links */
+/* Hover effect for project boxes */
+/* Responsive design for smaller screens */
+body {
+	margin: 0;
+	font-family: $font-family_1;
+	background-color: $background-color_1;
+	color: $color_1;
+}
+header {
+	background-color: $background-color_2;
+	color: $color_2;
+	padding: 20px;
+	text-align: center;
+}
+nav {
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin-top: 10px;
+		li {
+			display: inline;
+			margin: 0 15px;
+			a {
+				color: $color_2;
+				text-decoration: none;
+				&:hover {
+					text-decoration: underline;
+					color: $color_5;
+				}
+			}
+		}
+	}
+}
+section {
+	padding: 40px;
+	max-width: 800px;
+	margin: auto;
+}
+h2 {
+	color: $color_3;
+}
+.project {
+	background-color: $background-color_3;
+	padding: 20px;
+	margin-top: 20px;
+	border-left: 4px solid #1e1e1e;
+	&:hover {
+		background-color: $background-color_5;
+		transition: background-color 0.3s ease;
+	}
+}
+footer {
+	text-align: center;
+	padding: 20px;
+	background-color: $background-color_4;
+	color: $color_4;
+}
+#contact {
+	form {
+		div {
+			display: flex;
+			align-items: center;
+			margin-bottom: 10px;
+		}
+	}
+	label {
+		width: 100px;
+		margin-right: 10px;
+	}
+	input {
+		flex: 1;
+	}
+	textarea {
+		flex: 1;
+	}
+}
+@media (max-width: 600px) {
+	nav {
+		ul {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			li {
+				margin: 10px 0;
+			}
+		}
+	}
+	section {
+		padding: 20px;
+	}
+}
